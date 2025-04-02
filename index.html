@@ -71,7 +71,7 @@
 
     guesses.textContent += userGuess + ' ';
 
-    if (userGuess === parseInt(randomNumber)) {
+    if (userGuess === randomNumber) {
       lastResult.textContent = 'Felicitaciones! adivinaste el número!';
       lastResult.style.backgroundColor = 'green';
       lowOrHi.textContent = ' ';
@@ -83,9 +83,9 @@
     } else {
       lastResult.textContent = 'Incorrecto! ';
       lastResult.style.backgroundColor = 'black';
-      if (userGuess < parseInt(randomNumber)) {
+      if (userGuess < randomNumber) {
         lowOrHi.textContent = 'El número es mayor!';
-      } else if (userGuess > parseInt(randomNumber)) {
+      } else if (userGuess > randomNumber) {
         lowOrHi.textContent = 'El número es menor!';
       }
     }
